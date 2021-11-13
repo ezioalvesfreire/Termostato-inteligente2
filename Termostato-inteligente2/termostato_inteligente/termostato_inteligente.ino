@@ -6,6 +6,8 @@
 
 //const char* ssid = "********";
 //const char* password = "********";
+const char* ssid = "VIVO-8965";
+const char* password = "C9D3C88965";
 
 
 
@@ -157,7 +159,8 @@ void loop()
 
                         client.print("</style>");
 
-                        client.println("<body onload=\"LeDadosDoArduino()\">");                      //<------ALTERADO                    
+                        client.println("<body onload=\"LeDadosDoArduino()\">");                      //<------ALTERADO 
+                        client.println("<h1>TERMOSTATO INTELIGENTE</h1>");                   
                         client.println("<h1>PORTAS EM FUN&Ccedil;&Atilde;O ANAL&Oacute;GICA</h1>");
 
                         for (int nL=0; nL < qtdePinosAnalogicos; nL++) {
